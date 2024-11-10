@@ -42,7 +42,7 @@
   //inicializamos la pantalla LCD
   LiquidCrystal lcd(RS, En, D4, D5, D6, D7);
 
-  // puntos 
+  // puntos del juego
   int cuadrados = 0; // numero de cuadraditos totales que consigues pasar en una partida en el juego( en la pantalla lo tenemos puesto con el nombre "score")
 
 
@@ -51,7 +51,7 @@
 
 
 
-//-------PERSONAJES NECESARIAS EN EL JUEGO----------
+//-------PERSONAJES NECESARIOS EN EL JUEGO----------
 // ----- Vamos a configurar cada dibujo que aparece en el juego para que pueda aparecer bien en la pantalla LCD 
 
   // dinosaurio con pierna derecha 
@@ -275,7 +275,7 @@
     // para empezar a poner cosas en la pantalla desde esa posicion (inicial)
     lcd.setCursor(0, 0);
 
-    int readValue; // inicializamos esta variable para leer el valor en la EEPROM del valor que le hemos puesto en esa casilla (RECORD DE CUADRADOS )
+    int readValue; // inicializamos esta variable para leer el valor en la EEPROM del valor que le hemos puesto en esa casilla (RECORD DE CUADRADOS,puntos  )
     readValue=EEPROM.read(eepromAddress);//leemos ese valor 
 
     lcd.print(" ESTAS LISTO? ");
